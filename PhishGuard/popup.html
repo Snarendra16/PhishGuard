@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PhishEye</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="app">
+    <h1>PhishEye</h1>
+    <div class="privacy">Analysis performed locally; no page content is sent to external servers by default.</div>
+
+    <div id="scoreCard" class="card">
+      <div class="score-header">Website Safety Score</div>
+      <div class="score-row">
+        <div class="score-number" id="scoreNumber">--/100</div>
+        <div class="score-label" id="scoreLabel">—</div>
+      </div>
+      <div class="score-bar"><div class="score-fill" id="scoreFill" style="width:0%"></div></div>
+    </div>
+
+    <div id="status" class="card">
+      <div class="row">
+        <div class="label">Verdict:</div>
+        <div class="value"><span id="verdictPill" class="pill">-</span></div>
+      </div>
+      <div class="row">
+        <div class="label">URL:</div>
+        <div class="value truncate mono" id="url">-</div>
+      </div>
+      <div class="row">
+        <div class="label">Timestamp:</div>
+        <div class="value" id="ts">-</div>
+      </div>
+    </div>
+
+    <div id="reasonsWrap" class="card">
+      <div class="label">Reasons</div>
+      <ul id="reasons"></ul>
+    </div>
+
+    <div class="actions">
+      <button class="btn ghost" id="copyUrl">Copy URL</button>
+      <button class="btn primary" id="markTrusted">Mark Trusted</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

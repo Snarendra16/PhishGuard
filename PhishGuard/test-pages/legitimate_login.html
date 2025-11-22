@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Example — Sign In</title>
+  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAMAAABhv5wKAAAAD1BMVEUAy6YAy6YAy6YAy6YAzKb7nA3SAAAABXRSTlMAAQYQISb3Z8bqAAAAG0lEQVQI12NgwADGQGQwMDAwMZCAgYGBgSEAAE3aAi4g9bZQAAAAAElFTkSuQmCC">
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 40px; }
+    .card { max-width: 360px; margin: auto; border: 1px solid #ddd; border-radius: 6px; padding: 16px; }
+    h1 { font-size: 18px; margin-top: 0; }
+    input, button { width: 100%; padding: 8px; margin: 6px 0; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Sign in</h1>
+    <form method="POST" action="/login">
+      <input type="text" name="email" placeholder="Email">
+      <input type="password" name="password" placeholder="Password">
+      <button type="submit">Sign in</button>
+    </form>
+    <p>This is a legitimate-looking demo login form served from the same host.</p>
+  </div>
+</body>
+</html>

